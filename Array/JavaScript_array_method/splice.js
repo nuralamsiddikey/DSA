@@ -10,6 +10,7 @@ const language2 = ["c", "c++", "python", "javascript", "typescript"];
 language2.splice(3, 2);
 console.log(language2);
 
+//remove one item from 2 index and add 'php','c#'
 const language3 = ["c", "c++", "python", "javascript", "typescript"];
 language3.splice(2, 1, "php", "c#");
 console.log(language3);
