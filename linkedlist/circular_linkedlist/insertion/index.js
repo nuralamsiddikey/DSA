@@ -7,10 +7,17 @@ class Node {
 
 function insertAtFirst(last, data) {
   const newNode = new Node(data);
-
   newNode.next = last.next;
   last.next = newNode;
   return newNode;
+}
+
+function insertAtEnd(last, data) {
+  const newNode = new Node(data);
+  newNode.next = last.next
+  last.next = newNode;
+  last = newNode
+  return last;
 }
 
 function printList(last) {
@@ -32,5 +39,6 @@ first.next = second;
 second.next = third;
 third.next = first;
 
-third = insertAtFirst(third, 100);
-printList(third);
+//third = insertAtFirst(third, 100);
+third = insertAtEnd(third, 40);
+printList(first);
