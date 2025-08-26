@@ -1,16 +1,3 @@
-function maxSum(arr) {
-  for (let i = 0; i < arr.length; i++) {
-    for (let j = i; j < arr.length; j++) {
-      let subArr = [];
-      for (let k = i; k <= j; k++) {
-        subArr.push(arr[k]);
-      }
-
-      console.log(subArr);
-    }
-  }
-}
-
 function maxSum(arr, size) {
   let len = arr.length - (size - 1);
   let maxSum = 0;
