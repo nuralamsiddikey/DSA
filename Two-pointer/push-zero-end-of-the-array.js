@@ -1,3 +1,7 @@
+// two traversal approach
+// tc: n(n)
+// sc: n(1)
+
 function removeZeroEnd(arr, ele) {
   let count = 0;
   for (let i = 0; i < arr.length; i++) {

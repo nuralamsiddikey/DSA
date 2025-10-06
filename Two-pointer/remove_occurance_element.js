@@ -9,6 +9,6 @@ function removeElement(arr, ele) {
   return arr.splice(0,5)
 }
 
-const arr = [0, 1, 3, 0, 2, 2, 4, 2];
+const arr = [1, 3, 0, 2, 2, 4, 2];
 const ele = 2;
 console.log(removeElement(arr, ele));
