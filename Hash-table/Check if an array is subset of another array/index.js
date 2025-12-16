@@ -1,3 +1,5 @@
+
+// naive approach
 function isSubset(a, b) {
   for (let i = 0; i < b.length; i++) {
     if (!a.includes(b[i])) {
@@ -6,8 +8,3 @@ function isSubset(a, b) {
   }
   return true;
 }
-
-let a = [10, 5, 2, 23, 19];
-let b = [19, 5, 3];
-
-console.log(isSubset(a, b));
