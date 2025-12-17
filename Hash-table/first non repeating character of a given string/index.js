@@ -1,0 +1,18 @@
+// first non repeating character of a given string
+
+function firstNonRepeatingCharacter(str) {
+  for (let i = 0; i < str.length; i++) {
+    let found = false
+    for (let j = 0; j < str.length; j++) {
+      if (i !== j && str[i] === str[j]) {
+        found = true
+        break
+      } 
+    }
+    if(!found) return str[i]
+  }
+  return '$'
+}
+
+let str = "geeksforgeeks";
+console.log(firstNonRepeatingCharacter(str));
