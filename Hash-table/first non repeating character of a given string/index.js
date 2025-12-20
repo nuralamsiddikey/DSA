@@ -1,5 +1,5 @@
-// first non repeating character of a given string
 
+//naive approach
 function firstNonRepeatingCharacter(str) {
   for (let i = 0; i < str.length; i++) {
     let found = false
